@@ -52,7 +52,7 @@ const MusicPlayerV2 = ({
 		setShowPlayIcon,
 	} = useMusicPlayer(
 		audio,
-		`${process.env.NEXT_PUBLIC_API_URL}/tracks/${track._id}/mp3`
+		track.url
 	);
 	const toast = useToast();
 
@@ -88,7 +88,7 @@ const MusicPlayerV2 = ({
 					playHandler={() =>
 						playHandler(
 							audio,
-							`${process.env.NEXT_PUBLIC_API_URL}/tracks/${track._id}/mp3`,
+							track.url,
 							setIsPlaying,
 							setShowPlayIcon
 						)
