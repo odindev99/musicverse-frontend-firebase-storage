@@ -1,0 +1,32 @@
+@use "/styles/variables.module" as vars;
+
+.music_player {
+	// width: 265px;
+	width: 100%;
+	grid-column: span 1;
+	min-height: 325px;
+	padding: 1rem;
+	background-color: vars.$secondary-color;
+	border: 1px solid vars.$terciary-color;
+	box-shadow: 1px 4px 27px -2px vars.$terciary-color;
+
+	svg {
+		cursor: pointer;
+	}
+
+	.volume_range_container {
+		position: absolute;
+		bottom: 30px;
+		left: 8px;
+		z-index: 100px;
+		padding-left: 5px;
+		padding-right: 5px;
+		// background-color: blue;
+	}
+
+	.duration_range_container {
+		display: flex;
+		height: 30px;
+		align-items: center;
+	}
+}

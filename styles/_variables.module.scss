@@ -1,0 +1,45 @@
+$breakpoints: (
+	xxs: 350px,
+	xs: 480px,
+	// < Mobile devices
+	s: 576px,
+	m: 768px,
+	// < Tablets
+	l: 1025px,
+	xl: 1200px,
+	xxl: 1400px,
+	// < Laptops, Desktops and Extra large screens
+);
+
+// Colors
+$main-color: #181818;
+$secondary-color: #2a2a2a;
+// $secondary-color: rgba(42, 42, 42, 0.4 );
+$terciary-color: #4d4d4d;
+$vibrant-color: #6d00ff;
+$red-color: #fd220e;
+$orange-color: #fd6601;
+$modal-bg: #000000e6;
+$formik-error-color: #e5ff00;
+
+// Variables de apilamineto z-index scss
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+// Layout
+$max-width: 1300px;
+$navbar-height: 85px;
+$toggle-add-song-button: 452px;
+
+// Variables que se usan directamente en js
+:export {
+	mainColor: $main-color;
+	secondaryColor: $secondary-color;
+	terciaryColor: $terciary-color;
+	vibrantColor: $vibrant-color;
+	redColor: $red-color;
+	orangeColor: $orange-color;
+}

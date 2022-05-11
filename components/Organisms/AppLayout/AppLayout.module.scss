@@ -1,0 +1,7 @@
+@use "/styles/variables.module" as vars;
+
+.main {
+	background-color: vars.$main-color;
+	height: calc(100vh - #{vars.$navbar-height});
+	overflow-x: hidden;
+}

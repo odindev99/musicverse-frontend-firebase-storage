@@ -1,0 +1,37 @@
+@use "/styles/variables.module" as vars;
+
+.container {
+	width: 160px;
+}
+
+.cover {
+	position: relative;
+	height: 160px;
+	width: 100%;
+	background-color: vars.$secondary-color;
+	border: 1px solid vars.$terciary-color;
+	box-shadow: 1px 4px 27px -2px vars.$terciary-color;
+	cursor: pointer;
+
+	&:after {
+		opacity: 0;
+		transition: opacity 0.5s ease-out;
+		content: url(/images/iconmonstr-media-control-48.svg);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 1000;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(27, 27, 27, 0.2);
+	}
+
+	&:hover {
+		&:after {
+			opacity: 1;
+		}
+	}
+}

@@ -1,0 +1,8 @@
+@use "/styles/mixin" as mix;
+@use "/styles/variables.module" as vars;
+
+.mobile_button {
+	@include mix.from(vars.$toggle-add-song-button) {
+		display: none;
+	}
+}

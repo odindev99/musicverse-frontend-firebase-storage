@@ -1,0 +1,14 @@
+@use '/styles/variables.module' as vars;
+
+.container {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  place-items: center;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color ease-out 0.45s;
+
+  &:hover {
+    background-color: vars.$secondary-color;
+  }
+}

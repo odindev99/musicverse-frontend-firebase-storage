@@ -1,0 +1,11 @@
+@use "/styles/mixin" as mix;
+@use "/styles/variables.module" as vars;
+
+.container {
+	width: 100%;
+	max-width: 800px;
+	background-color: vars.$main-color;
+	padding: 2rem;
+	height: 425px;
+  overflow-y: auto;
+}

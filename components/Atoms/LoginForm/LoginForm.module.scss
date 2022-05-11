@@ -1,0 +1,20 @@
+@use "/styles/mixin" as mix;
+
+.grid_container {
+	display: grid;
+	column-gap: 10px;
+
+	@include mix.from(888px) {
+		grid-template-columns: repeat(2, auto);
+
+		p {
+			justify-self: right;
+		}
+	}
+
+	@include mix.to(888px) {
+		p:not(:first-child) {
+			margin-top: 25px;
+		}
+	}
+}

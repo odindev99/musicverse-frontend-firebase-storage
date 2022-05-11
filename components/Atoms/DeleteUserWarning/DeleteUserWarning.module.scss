@@ -1,0 +1,8 @@
+@use '/styles/variables.module' as vars;
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  background-color: vars.$secondary-color;
+  padding: 1rem
+}

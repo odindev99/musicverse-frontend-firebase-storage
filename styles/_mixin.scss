@@ -1,0 +1,31 @@
+@use "./variables.module" as vars;
+
+@mixin from($bp) {
+	@if map-has-key(vars.$breakpoints, $bp) {
+		@media screen and(min-width: map-get(vars.$breakpoints, $bp)) {
+			@content;
+		}
+	} @else {
+		@media screen and(min-width: $bp) {
+			@content;
+		}
+	}
+}
+
+@mixin to($bp) {
+	@if map-has-key(vars.$breakpoints, $bp) {
+		@media screen and(max-width: map-get(vars.$breakpoints, $bp)) {
+			@content;
+		}
+	} @else {
+		@media screen and(max-width: $bp) {
+			@content;
+		}
+	}
+}
+
+@mixin centerAbsoluteElement {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}

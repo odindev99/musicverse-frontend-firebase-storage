@@ -1,0 +1,30 @@
+@use "/styles/variables.module" as vars;
+
+.container {
+  position: fixed;
+  top: vars.$navbar-height;
+  right: 0;
+  background-color: vars.$secondary-color;
+  border: 1px solid vars.$terciary-color;
+  width: 205px;
+  z-index: vars.$z-tooltip;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.4rem;
+  
+  a {
+    &:hover {
+      color: vars.$vibrant-color;
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+
+    &:hover {
+      color: red;
+    }
+  }
+}

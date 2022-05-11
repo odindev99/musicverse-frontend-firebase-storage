@@ -1,0 +1,12 @@
+@use '/styles/variables.module' as vars;
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  background-color: vars.$secondary-color;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
