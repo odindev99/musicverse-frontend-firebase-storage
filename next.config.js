@@ -3,7 +3,7 @@ module.exports = {
 	images: {
 		domains: [
 			"lastfm.freetls.fastly.net",
-			"musicverse-backend.herokuapp.com",
+			"musicverse-backend-firebase.herokuapp.com",
 			"localhost",
 			"storage.googleapis.com",
 		],
